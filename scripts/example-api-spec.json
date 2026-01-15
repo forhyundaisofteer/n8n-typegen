@@ -1,0 +1,59 @@
+{
+  "apis": [
+    {
+      "method": "GET",
+      "path": "/api/users",
+      "response": [
+        { "id": 1, "name": "John Doe", "email": "john@example.com" },
+        { "id": 2, "name": "Jane Smith", "email": "jane@example.com" }
+      ],
+      "statusCode": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/users/{id}",
+      "response": {
+        "id": 1,
+        "name": "John Doe",
+        "email": "john@example.com"
+      },
+      "statusCode": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/users",
+      "requestBody": {
+        "name": "string",
+        "email": "string"
+      },
+      "response": {
+        "id": 1,
+        "name": "New User",
+        "email": "newuser@example.com"
+      },
+      "statusCode": 201
+    },
+    {
+      "method": "PUT",
+      "path": "/api/users/{id}",
+      "requestBody": {
+        "name": "string",
+        "email": "string"
+      },
+      "response": {
+        "id": 1,
+        "name": "Updated User",
+        "email": "updated@example.com"
+      },
+      "statusCode": 200
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/users/{id}",
+      "response": {
+        "message": "User deleted successfully"
+      },
+      "statusCode": 200
+    }
+  ]
+}

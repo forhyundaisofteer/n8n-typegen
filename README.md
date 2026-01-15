@@ -1,0 +1,1 @@
+n8n workflow for type generation and server mocking (google-docs based)
